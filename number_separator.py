@@ -13,6 +13,7 @@ class NumberClassifier:
         with open(self.input_file, 'r') as src, \
                 open('even.txt', 'w') as ev, \
                 open('odd.txt', 'w') as od:
+            
             for line in src:
                 num = int(line.strip())
                 if num % 2 == 0:
